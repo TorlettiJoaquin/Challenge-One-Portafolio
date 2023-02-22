@@ -45,6 +45,8 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+@media screen and (min-width: 1024px) {
+    
 /*Sección Menu*/
 
 section.menu{
@@ -337,6 +339,8 @@ section.footer {
     padding: 0;
 }
 
+}
+
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
@@ -353,7 +357,6 @@ section.menu{
     padding: 0 20px;
     background-color: var(--cor-de-fundo-2);
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    
 }
 
 .menu__list{
@@ -370,7 +373,7 @@ section.menu{
 /*Titulo*/
 
 section.title {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
 }
 
 .title__div {
@@ -404,9 +407,16 @@ section.title {
 
 /*Sección sobre mi*/
 
-
+section.about{
+    padding: 1rem 3rem;
+    background-color: var(--cor-de-fundo-2);
+}
 
 /*Skills*/
+
+section.skills{
+    padding: 3rem 0;
+}
 
 .skills__title{
     display: flex;
@@ -432,6 +442,10 @@ section.title {
 }
 
 /*Hobbies*/
+
+section.hobbies{
+    padding: 3rem 0;
+}
 
 .hobbies__title{
     display: flex;
@@ -459,7 +473,8 @@ section.title {
 /*Formación Académica*/
 
 section.academic {
-    padding: 1rem 1rem 0.5rem 1rem;
+    background-color: var(--cor-de-fundo-2);
+    padding: 1.5rem 4rem 1.5rem 4rem;
 }
 
 .academic__title{
@@ -482,6 +497,10 @@ section.academic {
 }
 
 /*Experiencia Profesional*/
+
+section.experience {
+    padding: 1rem 2rem;
+}
 
 .experience__section__title{
     display: flex;
@@ -540,7 +559,8 @@ section.academic {
 /*Contacto*/
 
 section.formcontacto {
-    padding: 1rem 2.5rem;
+    background-color: var(--cor-de-fundo-2);
+    padding: 2rem 4rem;
 }
 
 .formcontacto__contacto img{
@@ -590,20 +610,21 @@ section.formcontacto {
 /*Footer*/
 
     section.footer {
-        padding: 1rem 2.5rem;
+        
     }
 
     .footer__rodape {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
+        margin: 0 auto;
+        width: 60vw;
     }
 
 
 }
 
 /*Mobile*/
-@media (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
 
 /*Menu*/
 
@@ -611,7 +632,7 @@ section.formcontacto {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0 20px;
+        padding: 0 2rem 0 1rem;
         background-color: var(--cor-de-fundo-2);
         box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
@@ -637,6 +658,10 @@ section.formcontacto {
 
 /*Titulo*/
 
+    section.title {
+        padding: 1rem 2rem;
+    }
+
     .title__profile{
         max-width: 40%;
         height: auto;
@@ -658,9 +683,15 @@ section.formcontacto {
 
 /*Sección sobre mi*/
 
-
+    section.about{
+        padding: 1rem 2rem;
+        background-color: var(--cor-de-fundo-2);
+    }
 
 /*Skills*/
+    section.skills{
+        padding: 2rem 0;
+    }
 
     .skills__title{
         display: flex;
@@ -687,6 +718,10 @@ section.formcontacto {
 
 /*Hobbies*/
 
+    section.hobbies{
+        padding: 2rem 0;
+    }
+
     .hobbies__title{
         display: flex;
         justify-content: center;
@@ -712,6 +747,11 @@ section.formcontacto {
  
 /*Formación Académica*/
 
+    section.academic {
+        background-color: var(--cor-de-fundo-2);
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
     .academic__title{
         display: flex;
         justify-content: center;
@@ -734,6 +774,10 @@ section.formcontacto {
     }
 
 /*Experiencia Profesional*/
+
+    section.experience {
+        padding: 1rem 2rem;
+    }
 
     .experience__section__title{
         display: flex;
@@ -792,7 +836,8 @@ section.formcontacto {
 /*Contacto*/
 
     section.formcontacto {
-        padding: 1rem 2.5rem;
+        background-color: var(--cor-de-fundo-2);
+        padding: 2rem 2.5rem;
     }
 
     .formcontacto__contacto img{
@@ -842,7 +887,7 @@ section.formcontacto {
 /*Footer*/
     
         section.footer {
-            padding: 1rem 2.5rem;
+        
         }
 
         .footer__rodape {
