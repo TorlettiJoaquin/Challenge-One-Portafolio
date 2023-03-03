@@ -387,7 +387,7 @@ section.title {
     aspect-ratio: 1/1;
     max-width: 25vw;
     border-radius: 50%;
-    object-fit: cover;   
+    object-fit: cover;
 }
 
 .title__container {
@@ -663,10 +663,12 @@ section.formcontacto {
     }
 
     .title__profile{
+        aspect-ratio: 1/1;
         max-width: 40%;
         height: auto;
-        border-radius: 100%;
-        padding: 1rem 0 0 0;
+        border-radius: 50%;
+        object-fit: cover;
+
     }
 
     .title__subsection{
