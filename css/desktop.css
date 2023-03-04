@@ -1,6 +1,10 @@
 @media screen and (min-width: 1024px) {
     
     /*Sección Menu*/
+
+    .menu__header {
+        padding-left: 10rem;
+    }
     
     section.menu{
         display: flex;
@@ -26,13 +30,13 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 25vw;
+        width: 15vw;
     }
     
     /*Sección Title*/
     
     section.title {
-        padding: 1rem 3rem;
+        padding: 1rem 15rem;
     }
     
     .title__div {
@@ -44,7 +48,7 @@
     
     .title__profile {
         aspect-ratio: 1/1;
-        max-width: 25vw;
+        max-width: 15vw;
         border-radius: 50%;
         object-fit: cover;   
     }
@@ -62,19 +66,20 @@
         justify-content: space-between;
         padding: 1rem 0;
         font-weight: 600;
+        max-width: 50vw;
     }
     
     /*Sección About*/
     
     section.about{
-        padding: 1rem 3rem;
+        padding: 1rem 15rem;
         background-color: var(--cor-de-fundo-2);
     }
     
     /*Skills*/
     
     section.skills{
-        padding: 3rem 0;
+        padding: 3rem 15rem;
     }
     
     .skills__title{
@@ -103,7 +108,7 @@
     /*Sección Hobbies*/
     
     section.hobbies{
-        padding: 3rem 0;
+        padding: 3rem 15rem;
     }
     
     .hobbies__title{
@@ -133,7 +138,7 @@
     
     section.academic {
         background-color: var(--cor-de-fundo-2);
-        padding: 1.5rem 4rem 1.5rem 4rem;
+        padding: 1.5rem 15rem ;
     }
     
     .academic__title {
@@ -148,17 +153,20 @@
     }
     
     .academic__courses__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
     }
     
     .academic__courses__list img {
-        width: 80vw;
+        width: 15vw;
     }
     
     /* experiencia*/
     
     section.experience {
-        padding: 1rem 2rem;
+        padding: 1rem 15rem;
     }
     
     .experience__section__title {
@@ -179,7 +187,7 @@
     }
     
     .experience__box img {
-        width: 60vw;
+        width: 40vw;
         border-radius: 5%;
         object-fit: cover;
         padding: 0 1rem;
@@ -222,22 +230,26 @@
     
     section.formcontacto {
         background-color: var(--cor-de-fundo-2);
-        padding: 2rem 4rem;
+        padding: 2rem 15rem;
     }
     
     .formcontacto__contacto {
         display: flex;
-        align-items: center;
         padding: 1rem 0;
         max-height: 100vh;
     }
     
     .formcontacto__left {
         width: 50vw;
+        display: flex;
+        justify-content: center;
     }
     
     .formcontacto__text {
         width: 45vw;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
     }
     
     .formcontacto__subtext {
@@ -287,9 +299,8 @@
     
     .footer__rodape {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
+        justify-content: center;
+        gap: 1rem;
     }
     
 }    
