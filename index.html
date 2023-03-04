@@ -4,15 +4,29 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <!-- Referencia de la hoja de estilo de Css -->
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="css/desktop.css">
+        <link rel="stylesheet" href="css/menu.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
         <!-- Fonte del Proyecto Raleway -->
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
             rel="stylesheet"
         />
+
+        <!-- FontAwesome Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        />
+
+        <!-- Elementos visibles -->
         <title>Torletti Joaquin</title>
         <link
             rel="shortcut icon"
@@ -29,29 +43,32 @@
                     <h3 class="menu__title">Torletti Joaquin</h3>
                 </header>
                 <nav>
-                    <ul class="menu__list">
-                        <li class="menu__list__item">
-                            <a href="#sobre-mi">Sobre mi</a>
-                        </li>
-                        <li class="menu__list__item">
-                            <a href="#skills">Skills</a>
-                        </li>
-                        <li class="menu__list__item">
-                            <a href="#hobbies">Hobbies</a>
-                        </li>
-                        <li class="menu__list__item">
-                            <a href="#formacion">Formación</a>
-                        </li>
-                        <li class="menu__list__item">
-                            <a href="#xp">Proyectos</a>
-                        </li>
-                        <li class="menu__list__item">
-                            <a href="#contacto">axeltorletti@gmail.com</a>
-                        </li>
-                    </ul>
-                    <li class="menu__list__item__contacto">
-                        <a href="#contacto">axeltorletti@gmail.com</a>
-                    </li>
+                    <div class="menu-wrap">
+                        <input type="checkbox" class="toggler" />
+                        <div class="hamburger"><div></div></div>
+                        <div class="menu">
+                            <div>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <a href="#sobre-mi">Sobre mi</a>
+                                        </li>
+                                        <li><a href="#skills">Skills</a></li>
+                                        <li><a href="#hobbies">Hobbies</a></li>
+                                        <li>
+                                            <a href="#formacion">Formación</a>
+                                        </li>
+                                        <li><a href="#xp">Proyectos</a></li>
+                                        <li>
+                                            <a href="#contacto"
+                                                >Contacto</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </section>
 
@@ -473,11 +490,12 @@
             <section class="footer">
                 <div class="footer__rodape">
                     <p>Desarrollado por Torletti Joaquin</p>
-                    <p> 2023</p>
+                    <p>2023</p>
                 </div>
             </section>
         </div>
         <!-- Script del documento JavaScript -->
-        <script src="validacion.js"></script>
+        <script src="js/validacion.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

@@ -1,0 +1,271 @@
+/*Mobile*/
+@media (min-width: 300px) and (max-width: 767px) {
+
+    /*Menu*/
+    
+        section.menu{
+            display: flex;
+            align-items: center;
+            padding: 0 2rem 0 1rem;
+            background-color: var(--cor-de-fundo-2);
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    
+        .menu__header{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 0.75rem;
+        }
+    
+        .menu__title {
+            font-weight: 700;
+        }
+    
+        .menu__list__item__contacto {
+            font-weight: 400;
+        }
+    
+    /*Titulo*/
+    
+        section.title {
+            padding: 1rem 2rem;
+        }
+    
+        .title__profile{
+            aspect-ratio: 1/1;
+            max-width: 40%;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+    
+        }
+    
+        .title__subsection{
+            font-weight: 400;
+        }
+    
+        .title__network{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    
+    /*Sección sobre mi*/
+    
+        section.about{
+            padding: 1rem 2rem;
+            background-color: var(--cor-de-fundo-2);
+        }
+    
+    /*Skills*/
+        section.skills{
+            padding: 2rem 0;
+        }
+    
+        .skills__title{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .skills__line{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        .skills__box{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .skills__box ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+    
+    /*Hobbies*/
+    
+        section.hobbies{
+            padding: 2rem 0;
+        }
+    
+        .hobbies__title{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .hobbies__line{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        .hobbies__box{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .hobbies__box ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+     
+    /*Formación Académica*/
+    
+        section.academic {
+            background-color: var(--cor-de-fundo-2);
+            padding: 1.5rem 2rem 1.5rem 2rem;
+        }
+    
+        .academic__title{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .academic__courses{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+    
+        .academic__courses__list{
+            padding: 0;
+        }
+    
+        .academic__courses__list img{
+            width: 80vw;
+        }
+    
+    /*Experiencia Profesional*/
+    
+        section.experience {
+            padding: 1rem 2rem;
+        }
+    
+        .experience__section__title{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .experience__box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0 4rem 0;
+        }
+    
+        .experience__box img{
+            width: 80vw;
+        }
+    
+        .experience__info {
+            width: 80vw;
+            text-align: left;
+        }
+    
+        .experience__title {
+            font-weight: 700;
+        }
+    
+        .experience__text {
+            font-weight: 500;
+        }
+    
+        .experience__description {
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        .experience__btn--repo{
+            font-weight: 600;
+            border: 2px solid #53148de7;
+            padding: 0.8rem 1.3rem;
+            width: 30vw;
+            background-color: transparent;
+    
+        }
+    
+        .experience__btn--demo{
+            color: white;
+            font-weight: 600;
+            border: 2px solid #53148da2;
+            padding: 0.8rem 1.3rem;
+            width: 30vw;
+            background-color: #53148de7;
+        }
+    
+    
+    /*Contacto*/
+    
+        section.formcontacto {
+            background-color: var(--cor-de-fundo-2);
+            padding: 2rem 2.5rem;
+        }
+    
+        .formcontacto__contacto img{
+            display: none;
+        }
+    
+        .formcontacto__subtext {
+            font-weight: 500;
+        }
+    
+        .formcontacto__form {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            border: none;
+        }
+    
+        .formcontacto__input,
+        .formcontacto__textarea {
+            background-color: var(--cor-de-fundo-2);
+            border: none;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 20px;
+            font-size: 16px;
+            box-shadow: 0.4px 2px 4px rgb(152, 84, 195);
+            
+        }
+    
+        .formcontacto__input:focus,
+        .formcontacto__textarea:focus {
+            border-bottom: 2px solid white;
+            outline: none;
+            box-shadow: none;
+        }
+    
+        .formcontacto__btn {
+            font-weight: 600;
+            border: 2px solid #53148da2;
+            padding: 0.8rem 1.3rem;
+            width: 50vw;
+            background-color: #53148de7;
+            color: white;
+            margin: 0 auto;
+        }
+    
+    /*Footer*/
+        
+            section.footer {
+            
+            }
+    
+            .footer__rodape {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+    
+    }
