@@ -1,4 +1,5 @@
 /*Tablet*/
+
 @media (min-width: 768px) and (max-width: 1023px) {
 
     /*Menu*/
@@ -7,26 +8,39 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: fixed;
+        width: 100vw;
         padding: 0 20px;
-        background-color: var(--cor-de-fundo-2);
+        z-index: 99;
+        background-color: rgb(185, 160, 208);
         box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
     
-    .menu__list{
+    .menu__list {
         display: none;
     }
     
-    .menu__header{
+    .menu__header {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 25vw;
     }
+
+    .menu__header a {
+        transform: scale(1);
+        transition: 0.5s;
+    }
+
+    .menu__header a:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
     
     /*Titulo*/
     
     section.title {
-        padding: 1rem 3rem;
+        padding: 4.5rem 3rem 1rem 3rem;
     }
     
     .title__div {
@@ -56,6 +70,16 @@
         justify-content: space-between;
         padding: 1rem 0;
         font-weight: 600;
+    }
+
+    .title__network__item {
+        animation: headShake;
+        z-index: 1;
+    }
+
+    .title__network__item:hover {
+        animation: repeat;
+        z-index: 1;
     }
     
     /*Sección sobre mi*/

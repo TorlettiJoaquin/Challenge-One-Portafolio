@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/mobile.css">
         <link rel="stylesheet" href="css/tablet.css">
         <link rel="stylesheet" href="css/desktop.css">
-        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="css/menu.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -24,6 +24,12 @@
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        />
+
+        <!-- CSS ANIMATION -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
 
         <!-- Elementos visibles -->
@@ -40,37 +46,23 @@
             <section class="menu">
                 <header class="menu__header">
                     <img src="assets\vector.png" />
-                    <h3 class="menu__title">Torletti Joaquin</h3>
-                </header>
-                <nav>
-                    <div class="menu-wrap">
-                        <input type="checkbox" class="toggler" />
-                        <div class="hamburger"><div></div></div>
-                        <div class="menu">
-                            <div>
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <a href="#sobre-mi">Sobre mi</a>
-                                        </li>
-                                        <li><a href="#skills">Skills</a></li>
-                                        <li><a href="#hobbies">Hobbies</a></li>
-                                        <li>
-                                            <a href="#formacion">Formación</a>
-                                        </li>
-                                        <li><a href="#xp">Proyectos</a></li>
-                                        <li>
-                                            <a href="#contacto"
-                                                >Contacto</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+                    <a href="#"><h3 class="menu__title">Torletti Joaquin</h3></a>
+                </header>               
             </section>
+            <div class="epic-menu">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+                <div class="menu-box" id="menuBox">
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre mi</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="#formacion">Formación</a></li>
+                        <li><a href="#xp">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            
 
             <!-- Sección del Header/Title/Hero -->
             <section class="title">
@@ -88,24 +80,24 @@
                         </h3>
                         <ul class="title__network">
                             <!-- Pon los enlaces de tus redes sociales favoritas -->
-                            <li class="title__network__item">
+                            <li class="title__network__item animate__animated">
                                 <a href="https://github.com/TorlettiJoaquin"
                                     >Github <img src="assets\arrow.png" />
                                 </a>
                             </li>
-                            <li class="title__network__item">
+                            <li class="title__network__item animate__animated">
                                 <a
                                     href="https://www.linkedin.com/in/axel-torletti/"
                                     >Linkedin <img src="assets\arrow.png"
                                 /></a>
                             </li>
-                            <li class="title__network__item">
+                            <li class="title__network__item animate__animated">
                                 <a
                                     href="https://www.instagram.com/joaquintorletti/"
                                     >Instagram <img src="assets\arrow.png"
                                 /></a>
                             </li>
-                            <li class="title__network__item">
+                            <li class="title__network__item animate__animated">
                                 <a href=""
                                     >Currículo <img src="assets\arrow.png"
                                 /></a>
@@ -311,7 +303,7 @@
             <!-- Sección de Experiencia Profesional/Proyectos-->
             <section class="experience" id="xp">
                 <h2 class="experience__section__title">
-                    Experiencia Profissional
+                    Experiencia Profesional
                 </h2>
                 <div class="experience__box">
                     <!-- Pon el logotipo/captura de pantalla de tu proyecto -->

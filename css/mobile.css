@@ -6,8 +6,11 @@
         section.menu{
             display: flex;
             align-items: center;
+            position: fixed;
+            width: 100vw;
+            z-index: 99;
             padding: 0 2rem 0 1rem;
-            background-color: var(--cor-de-fundo-2);
+            background-color: rgb(185, 160, 208);
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
     
@@ -29,7 +32,12 @@
     /*Titulo*/
     
         section.title {
-            padding: 1rem 2rem;
+            padding: 5rem 2rem 1rem 2rem;
+        }
+
+        .title__div .title__profile {
+            display: flex;
+            margin: 0 auto;
         }
     
         .title__profile{
