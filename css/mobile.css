@@ -20,6 +20,16 @@
             align-items: center;
             gap: 0.75rem;
         }
+
+        .menu__header a {
+            transform: scale(1);
+            transition: 0.5s;
+        }
+    
+        .menu__header a:hover {
+            transform: scale(1.09);
+            transition: 0.5s;
+        }
     
         .menu__title {
             font-weight: 700;
@@ -59,6 +69,16 @@
             padding: 1rem 0;
             font-weight: 600;
             font-size: 14px;
+        }
+
+        .title__network__item {
+            animation: headShake;
+            z-index: 1;
+        }
+    
+        .title__network__item:hover {
+            animation: repeat;
+            z-index: 1;
         }
     
     /*Sección sobre mi*/
