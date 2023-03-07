@@ -7,37 +7,51 @@
     }
     
     section.menu{
-        position: sticky;
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: fixed;
+        width: 100vw;
         padding: 0 2rem 0 1rem;
-        background-color: var(--cor-de-fundo-2);
+        background-color: rgb(185, 160, 208);
         box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-    
-    .menu__list__item__contacto {
-        display: none;
-    }
-    
-    .menu__list{
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        width: 60vw;
     }
     
     .menu__header{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 15vw;
+        width: 20vw;
+    }
+
+    .epic-menu i {
+        display: none;
+    }
+
+    .menu-box {
+        position: fixed;
+        display: grid;
+        place-items: center;
+        width: 70vw;
+        height: 58px;
+        top: 0;
+        right: 0;
+
+    }
+
+    .menu-box ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0.75rem;
     }
     
     /*Sección Title*/
     
     section.title {
-        padding: 1rem 15rem;
+        padding: 4rem 15rem 1rem 15rem;
+        
     }
     
     .title__div {
